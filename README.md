@@ -8,7 +8,7 @@
 ### go mod
 0. 创建环境变量
 - export GO111MODULE=auto
-# - export GOPROXY=https://goproxy.io
+- export GOPROXY=https://goproxy.io
 
 1. 初始化 
 - go mod init github.com/githubao/xiao-gogo
@@ -23,4 +23,6 @@
 replace old => new
 
 ### 其他备忘
+1. unset GOPATH
+1. use vgo in goland
 
