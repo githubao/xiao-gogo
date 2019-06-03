@@ -1,7 +1,7 @@
 // retry
 // author: baoqiang
 // time: 2019-04-02 11:15
-package retry
+package xretry
 
 import (
 	"errors"
@@ -10,11 +10,12 @@ import (
 	"github.com/kamilsk/retry/strategy"
 	"log"
 	"math/rand"
-	"testing"
 	"time"
 )
 
-func HelloRetry(t *testing.T) {
+func HelloRetry() {
+	fmt.Print("hello from local")
+
 	if err := retry.Retry(nil, hardWork, strategy.Limit(20)); err != nil {
 		panic(err)
 	}

@@ -15,6 +15,8 @@ func init() {
 }
 
 func HelloGls() {
+	fmt.Print("hello from local")
+
 	var wg sync.WaitGroup
 
 	for i := 0; i < 5; i++ {

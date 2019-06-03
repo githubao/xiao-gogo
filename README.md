@@ -8,7 +8,7 @@
 ### go mod
 0. 创建环境变量
 - export GO111MODULE=auto
-- export GOPROXY=https://goproxy.io
+# - export GOPROXY=https://goproxy.io
 
 1. 初始化 
 - go mod init github.com/githubao/xiao-gogo
@@ -16,4 +16,11 @@
 1. 导入所有依赖的包 // 使用哪个包就导入哪个更新go.mod
 - go build main.go
 
+1. 下载最近的包到mod文件夹
+- go mod download 
+
+1. 替换到本地的包
+replace old => new
+
+### 其他备忘
 

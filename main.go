@@ -6,8 +6,12 @@ package main
 import (
 	"fmt"
 	_ "github.com/githubao/xiao-gogo/gin"
+	"github.com/githubao/xiao-gogo/xretry"
 )
 
 func main() {
 	fmt.Println("hello, gogo")
+	//gls.HelloGls()
+	xretry.HelloRetry()
 }
+
